@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital_Marketing_Agency_Blog_Page</title>
+<title>SparkelBerry</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,49 @@
 <link rel="stylesheet" href="./assets/css/responsive.css">
 <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #260058;
+    color:white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+  }
+
+  .close-button {
+    color: white;
+    background-color:red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 40px;
+    text-align:center;
+    border-radius: 5px;
+    margin:10px 0;
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>
@@ -30,7 +73,9 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <div class="logo-img">
-            <a href="./index.html"><img class="img-fluid" src="./assets/images/logo.png" alt="img"></a>
+            <a href="./index.html"><!--<img class="img-fluid" src="./assets/images/logo.png" alt="img">-->
+              <h1 class="hero-title2" style="color:#260058;">SPARKELBERRY</h1>
+            </a>
           </div>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,19 +86,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="./about.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="./service.html">Our Services</a>
+                <a class="nav-link" href="./service.html">Our Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active  " href="./blog.html">Blog</a>
+                <a class="nav-link active" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="./contact.html">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -74,14 +119,14 @@
     <div class="container">
       <div class="blog-page-area">
         <span class="fs-18 about-sub">Blog</span>
-        <h3 class="fs-52-c" style="margin-top: 24px;"  
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="false">We Provide Awesome Digital<br class="d-none d-xl-block">
-         Marketing</h3>
+        <h3 class="fs-52-c" style="margin-top: 24px;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+          data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Latest Insights in<br
+            class="d-none d-xl-block">
+          Digital Marketing</h3>
+        <p class="fs-18 about-text" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+          data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-once="false">Explore our blog to stay ahead
+          with the newest trends and strategies in digital marketing.<br /> We provide actionable insights and tips to
+          help you enhance your online presence and achieve your marketing goals.</p>
       </div>
     </div>
   </div>
@@ -90,7 +135,7 @@
   <div class="tab-section overflow-x-hidden">
     <div class="container">
       <div class="tab-area">
-        <h4 class="fs-24-c category-title">Catagories:</h4>
+        <h4 class="fs-24-c category-title">Categories:</h4>
         <div class="btn-parent">
           <button data-name=".category-1" class="filter btn btn-success">Design Marketing</button>
           <button data-name=".category-2" class="filter btn btn-success">Web</button>
@@ -98,1043 +143,1287 @@
           <button data-name=".category-4" class="filter btn btn-success">Branding</button>
           <button data-name=".category-5" class="filter btn btn-success">Content creation</button>
           <button data-name=".category-6" class="filter btn btn-success">SEO analysis</button>
-          <div class="search-btn">
-            <input type="serach" placeholder="Search by post"><i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <!-- <button data-name="" class="btn btn-success light">Search by post <i class="fa-solid fa-magnifying-glass"></i></button> -->
-  
+
         </div>
-        
+
         <div class="grid">
           <div class="grid-item initial-filter category-1">
             <div class="row g-4 blog-content">
-              
+
               <div class="col-lg-6">
                 <div class="blog-wrapper">
                   <div class="blog-img-parent">
                     <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
                   </div>
                   <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
+                    <span class="fs-18-c blog-sub">Web Design</span>
+                    <span class="fs-18-c blog-sub">5 min read</span>
                   </div>
                   <div class="blog-sub-2-parent">
                     <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
+                      10 Tips for an Effective Web Design
                     </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                    <a href="#" class="open-modal" data-modal="#modal-1"> <img class="img-fluid"
+                        src="./assets/images/angel-icon.png" alt="icon"> </a>
                   </div>
                 </div>
-    
-
               </div>
+
               <div class="col-lg-6">
                 <div class="blog-wrapper">
                   <div class="blog-img-parent">
                     <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
                   </div>
                   <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
+                    <span class="fs-18-c blog-sub">Web Design</span>
+                    <span class="fs-18-c blog-sub">4 min read</span>
                   </div>
                   <div class="blog-sub-2-parent">
                     <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
+                      The Importance of Responsive Design
                     </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                    <a href="#" class="open-modal" data-modal="#modal-2"> <img class="img-fluid"
+                        src="./assets/images/angel-icon.png" alt="icon"> </a>
                   </div>
                 </div>
-    
-
               </div>
+
               <div class="col-lg-6">
                 <div class="blog-wrapper">
                   <div class="blog-img-parent">
                     <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
                   </div>
                   <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
+                    <span class="fs-18-c blog-sub">Web Design</span>
+                    <span class="fs-18-c blog-sub">3 min read</span>
                   </div>
                   <div class="blog-sub-2-parent">
                     <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
+                      Best Practices for UX/UI Design
                     </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                    <a href="#" class="open-modal" data-modal="#modal-3"> <img class="img-fluid"
+                        src="./assets/images/angel-icon.png" alt="icon"> </a>
                   </div>
                 </div>
-    
-
               </div>
+
               <div class="col-lg-6">
                 <div class="blog-wrapper">
                   <div class="blog-img-parent">
                     <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
                   </div>
                   <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
+                    <span class="fs-18-c blog-sub">Web Design</span>
+                    <span class="fs-18-c blog-sub">6 min read</span>
                   </div>
                   <div class="blog-sub-2-parent">
                     <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
+                      How to Optimize Images for the Web
                     </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                    <a href="#" class="open-modal" data-modal="#modal-4"> <img class="img-fluid"
+                        src="./assets/images/angel-icon.png" alt="icon"> </a>
                   </div>
                 </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
               </div>
 
             </div>
-            
-          </div>
-          <div class="grid-item category-2">
-            <div class="row g-4 blog-content">
-              
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-
-            </div>
-            
-          </div>
-          <div class="grid-item category-3">
-            <div class="row g-4 blog-content">
-              
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-
-            </div>
-            
-          </div>
-          <div class="grid-item category-4">
-            <div class="row g-4 blog-content">
-              
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-
-            </div>
-            
-          </div>
-          <div class="grid-item category-5">
-            <div class="row g-4 blog-content">
-              
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-
-            </div>
-            
-          </div>
-          <div class="grid-item category-6">
-            <div class="row g-4 blog-content">
-              
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-              <div class="col-lg-6">
-                <div class="blog-wrapper">
-                  <div class="blog-img-parent">
-                    <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
-                  </div>
-                  <div class="blog-sub-parent">
-                      <span class="fs-18-c blog-sub">Marketing</span>
-                      <span class="fs-18-c blog-sub">2 min read</span>
-                  </div>
-                  <div class="blog-sub-2-parent">
-                    <p class="fs-32-c text-start">
-                      How To Create A Modern That <br class="d-none d-lg-block">
-                      Attracts Customers?
-                    </p>
-                    <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
-                  </div>
-                </div>
-    
-
-              </div>
-
-            </div>
-            
           </div>
         </div>
 
-        <!-- pagination start -->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- pagination end -->
+        <div id="modal-1" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>10 Tips for an Effective Web Design</h2>
+            <p>Web design is a critical aspect of creating a strong online presence. Here are 10 tips to ensure your web
+              design is effective and engaging...</p>
+            <!-- Add more detailed content here -->
+            <p>Creating an impactful online presence begins with effective web design. Here are 10 essential tips to
+              ensure your website stands out and engages visitors:</p>
+            <p>1. Start with a Clear Purpose: Define the primary goal of your website to guide its design and content.
+            </p>
+            <p>2. Prioritize User Experience (UX): Make navigation intuitive and ensure fast loading times for a
+              seamless user experience.</p>
+            <p>3. Optimize for Mobile: With the rise of mobile browsing, ensure your website is responsive and looks
+              great on all devices.</p>
+            <p>4. Use Consistent Branding: Maintain brand consistency across all pages to reinforce your identity and
+              build trust.</p>
+            <p>5. Keep it Simple: Avoid clutter and focus on clean, minimalist design to highlight key content and
+              improve readability.</p>
+            <p>6. Use High-Quality Visuals: Incorporate eye-catching images and videos to enhance visual appeal and
+              engage visitors.</p>
+            <p>7. Include Clear Call-to-Actions (CTAs): Guide users towards desired actions with prominent and
+              compelling CTAs.</p>
+            <p>8. Prioritize Accessibility: Ensure your website is accessible to all users, including those with
+              disabilities, by following accessibility standards.</p>
+            <p>9. Test and Iterate: Continuously test different design elements and gather feedback to refine and
+              improve your website over time.</p>
+            <p>10. Stay Updated: Keep up with the latest design trends and technologies to ensure your website remains
+              fresh and relevant.</p>
+            <p>By following these tips, you can create a website that not only looks great but also effectively
+              communicates your message and drives results.</p>
+          </div>
+        </div>
 
-      
+        <div id="modal-2" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>The Importance of Responsive Design</h2>
+            <p>Responsive design is crucial in today's digital landscape. It ensures that your website adapts seamlessly
+              to various screen sizes and devices, providing users with an optimal viewing experience. Here's why
+              responsive design is essential:</p>
+            <p>1. Improved User Experience: Responsive websites are easier to navigate and interact with on different
+              devices, leading to higher user satisfaction.</p>
+            <p>2. Mobile-Friendly: With the increasing use of smartphones and tablets, having a responsive website is
+              essential to reach mobile users effectively.</p>
+            <p>3. Higher Conversion Rates: Responsive design can lead to higher conversion rates as users are more
+              likely to engage with a website that looks and functions well on their device.</p>
+            <p>4. Better SEO Performance: Google prioritizes mobile-friendly websites in search results, so having a
+              responsive design can improve your website's visibility and ranking.</p>
+            <p>5. Cost-Effectiveness: While initially requiring more investment, responsive design can save money in the
+              long run by eliminating the need for separate desktop and mobile versions of your website.</p>
+            <p>6. Future-Proofing: As new devices with varying screen sizes continue to emerge, responsive design
+              ensures that your website remains compatible and accessible across all platforms.</p>
+            <p>7. Flexibility: Responsive design allows your website to adapt to future technological advancements,
+              ensuring that it remains relevant and functional for years to come.</p>
+            <p>8. Competitive Advantage: A responsive website gives you a competitive edge over competitors who have not
+              optimized their sites for mobile devices, attracting more visitors and potential customers.</p>
+            <p>9. Reduced Bounce Rates: By providing a seamless user experience across all devices, responsive design
+              can reduce bounce rates and encourage visitors to explore more pages on your website.</p>
+            <p>10. Accessibility Compliance: Responsive design helps ensure that your website meets accessibility
+              standards, making it easier for people with disabilities to access and navigate your content.</p>
+            <p>Overall, responsive design is essential for creating a positive user experience, reaching a wider
+              audience, and staying competitive in today's digital landscape.</p>
+          </div>
+        </div>
+
+
+        <div id="modal-3" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Best Practices for UX/UI Design</h2>
+            <p>Great UX/UI design plays a critical role in creating websites and applications that are intuitive,
+              engaging, and user-friendly. Here are some best practices to follow:</p>
+            <p>1. User Research: Understand your target audience's needs, preferences, and behaviors through user
+              research, surveys, and usability testing. This insight will guide your design decisions.</p>
+            <p>2. Clear Navigation: Design a clear and intuitive navigation structure that allows users to easily find
+              the information they need. Use familiar patterns and conventions to enhance usability.</p>
+            <p>3. Responsive Design: Ensure your design is responsive and adapts seamlessly to different screen sizes
+              and devices. This guarantees a consistent experience across desktops, tablets, and smartphones.</p>
+            <p>4. Consistent Branding: Maintain consistent branding elements such as colors, typography, and imagery
+              throughout your design. This helps reinforce brand identity and builds trust with users.</p>
+            <p>5. Visual Hierarchy: Use visual hierarchy to prioritize content and guide users' attention. Utilize size,
+              color, contrast, and spacing to emphasize important elements and create a clear flow of information.</p>
+            <p>6. Intuitive Interaction: Design interactions and interface elements that are intuitive and easy to use.
+              Minimize cognitive load by simplifying complex tasks and providing clear feedback for user actions.</p>
+            <p>7. Accessibility: Ensure your design is accessible to users with disabilities by following accessibility
+              standards and guidelines. Consider factors such as color contrast, keyboard navigation, and screen reader
+              compatibility.</p>
+            <p>8. Performance Optimization: Optimize the performance of your design by minimizing loading times and
+              reducing unnecessary animations or visual clutter. This enhances the overall user experience and improves
+              site speed.</p>
+            <p>9. User Feedback: Incorporate user feedback loops into your design process to gather insights and refine
+              your design iteratively. Solicit feedback through surveys, user testing sessions, and analytics data.</p>
+            <p>10. Continuous Improvement: Design is an iterative process, so continue to monitor and analyze user
+              interactions and behaviors. Use this data to identify areas for improvement and refine your design over
+              time.</p>
+            <p>By following these best practices for UX/UI design, you can create digital experiences that delight
+              users, drive engagement, and achieve your business goals.</p>
+          </div>
+        </div>
+
+
+        <div id="modal-4" class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>How to Optimize Images for the Web</h2>
+            <p>Optimizing images for the web is essential for improving loading times, enhancing user experience, and
+              reducing bandwidth usage. Here are some tips to optimize your images:</p>
+            <p>1. Choose the Right Format: Select the appropriate image format based on the content and use case. Use
+              JPEG for photographs and images with many colors, PNG for images with transparency or simple graphics, and
+              SVG for vector graphics.</p>
+            <p>2. Resize Images: Resize images to the correct dimensions needed for your website or application. Avoid
+              using large, high-resolution images when smaller ones will suffice, as this can increase loading times.
+            </p>
+            <p>3. Compress Images: Use image compression techniques to reduce file size without significantly affecting
+              image quality. Tools like Photoshop, GIMP, or online compression services can help you achieve smaller
+              file sizes while maintaining visual integrity.</p>
+            <p>4. Optimize Alt Text: Include descriptive alt text for images to improve accessibility and provide
+              context for visually impaired users or when images fail to load. Alt text should accurately describe the
+              content or function of the image.</p>
+            <p>5. Lazy Loading: Implement lazy loading techniques to defer the loading of offscreen images until they
+              are needed. This can improve initial page load times and reduce the strain on server resources.</p>
+            <p>6. Use Responsive Images: Serve different image sizes based on the user's device and viewport size using
+              responsive image techniques like srcset and sizes attributes. This ensures that users receive
+              appropriately sized images for their device, improving performance and user experience.</p>
+            <p>7. Optimize File Names: Use descriptive file names for your images that include relevant keywords and
+              accurately describe the image content. This can improve SEO and make it easier for search engines to index
+              your images.</p>
+            <p>8. Consider Image CDNs: Utilize content delivery networks (CDNs) to deliver images from servers closer to
+              the user's location, reducing latency and speeding up image loading times. CDNs also offload bandwidth
+              from your main server.</p>
+            <p>By following these tips to optimize your images for the web, you can enhance the performance and user
+              experience of your website or application, resulting in faster loading times and happier visitors.</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="grid-item initial-filter category-2">
+          <div class="row g-4 blog-content">
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Web</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    How To Create A Modern Website That <br class="d-none d-lg-block">
+                    Attracts Customers?
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-5"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Web</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Importance of Mobile Optimization in Web Design
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-6"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Web</span>
+                  <span class="fs-18-c blog-sub">3 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Impact of Color Psychology in Web Design
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-7"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Web</span>
+                  <span class="fs-18-c blog-sub">4 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Role of Typography in Web Design
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-8"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Web</span>
+                  <span class="fs-18-c blog-sub">5 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Importance of User Experience (UX) Design
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-9"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="modal-5" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>How To Create A Modern Website That
+                  Attracts Customers?</h2>
+                <p>Creating a modern website that attracts customers involves a combination of design, content, and user
+                  experience strategies. Here's a detailed guide:</p>
+                <p>1. Define Your Target Audience: Understand your target audience's needs, preferences, and pain points
+                  to tailor your website accordingly.</p>
+                <p>2. Implement Responsive Design: Ensure your website is responsive and accessible across all devices,
+                  including desktops, tablets, and smartphones.</p>
+                <p>3. Focus on Visual Appeal: Use high-quality images, videos, and graphics to create a visually
+                  appealing website that captures users' attention.</p>
+                <p>4. Optimize for Speed: Improve your website's loading speed by optimizing images, minifying CSS and
+                  JavaScript files, and leveraging browser caching.</p>
+                <p>5. Prioritize User Experience (UX): Design intuitive navigation, clear calls-to-action, and seamless
+                  interactions to enhance the overall user experience.</p>
+                <p>6. Create Compelling Content: Develop engaging and informative content that resonates with your
+                  target audience and addresses their pain points.</p>
+                <p>7. Incorporate SEO Best Practices: Optimize your website for search engines by using relevant
+                  keywords, meta tags, and descriptive URLs.</p>
+                <p>8. Leverage Social Proof: Showcase customer testimonials, reviews, and case studies to build trust
+                  and credibility with potential customers.</p>
+                <p>9. Implement Conversion Optimization Techniques: Use A/B testing, heatmaps, and analytics to identify
+                  areas for improvement and optimize conversion rates.</p>
+                <p>10. Continuously Iterate and Improve: Regularly update and refine your website based on user
+                  feedback, industry trends, and performance metrics to stay ahead of the competition.</p>
+                <p>By following these steps, you can create a modern website that not only attracts customers but also
+                  converts them into loyal advocates for your brand.</p>
+
+              </div>
+
+            </div>
+            <div id="modal-6" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Importance of Mobile Optimization in Web Design</h2>
+                <p>Mobile optimization is a crucial aspect of web design in today's digital landscape. With the
+                  proliferation of smartphones and tablets, more users are accessing websites on mobile devices than
+                  ever before. Here's why mobile optimization is essential:</p>
+                <p>1. Enhanced User Experience: Mobile-optimized websites provide a seamless and enjoyable experience
+                  for mobile users. By ensuring that your site is easy to navigate and loads quickly on smartphones and
+                  tablets, you can improve user satisfaction and engagement.</p>
+                <p>2. Improved Search Engine Visibility: Google and other search engines prioritize mobile-friendly
+                  websites in their search results. By optimizing your site for mobile devices, you can improve its
+                  visibility and ranking in mobile search results, driving more organic traffic to your site.</p>
+                <p>3. Increased Conversions: Mobile-optimized websites are more likely to convert visitors into
+                  customers or leads. By providing a smooth and intuitive mobile experience, you can reduce bounce rates
+                  and increase conversion rates, ultimately driving more revenue for your business.</p>
+                <p>4. Adaptation to Changing User Behavior: Mobile usage continues to grow, with more people relying on
+                  their smartphones for browsing, shopping, and other online activities. By prioritizing mobile
+                  optimization, you can stay ahead of the curve and meet the evolving needs of your audience.</p>
+                <p>5. Competitive Advantage: In today's competitive online landscape, having a mobile-optimized website
+                  is no longer optional – it's essential for success. By investing in mobile optimization, you can
+                  differentiate your brand from competitors and attract and retain more customers.</p>
+                <p>Overall, mobile optimization is crucial for ensuring that your website remains relevant, accessible,
+                  and engaging in an increasingly mobile-centric world. By prioritizing mobile-friendly design
+                  principles, you can create a website that delights users, drives traffic, and delivers results for
+                  your business.</p>
+              </div>
+            </div>
+
+
+
+            <div id="modal-7" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Impact of Color Psychology in Web Design</h2>
+                <p>Color psychology plays a significant role in web design, influencing how visitors perceive and
+                  interact with a website. By understanding the psychological effects of different colors, web designers
+                  can create websites that evoke specific emotions and responses from users.</p>
+                <p>Here's a deeper look into the impact of color psychology in web design:</p>
+                <ul>
+                  <li><strong>Red:</strong> Red is often associated with energy, passion, and excitement. It can be used
+                    to grab attention and create a sense of urgency, making it ideal for call-to-action buttons or
+                    notifications.</li>
+                  <li><strong>Blue:</strong> Blue conveys trust, stability, and professionalism. It's commonly used by
+                    businesses and brands to instill confidence in visitors and promote a sense of security.</li>
+                  <li><strong>Yellow:</strong> Yellow is associated with optimism, warmth, and cheerfulness. It can be
+                    used to evoke a sense of happiness and positivity, making it suitable for brands targeting youthful
+                    or creative audiences.</li>
+                  <li><strong>Green:</strong> Green symbolizes growth, nature, and harmony. It's often used in
+                    environmental or health-related websites to promote feelings of tranquility and balance.</li>
+                  <li><strong>Orange:</strong> Orange is energetic and vibrant, evoking feelings of enthusiasm and
+                    creativity. It can be used to create a sense of excitement and encourage action, making it effective
+                    for promoting products or services.</li>
+                  <li><strong>Purple:</strong> Purple is associated with luxury, creativity, and spirituality. It's
+                    often used to add a touch of sophistication and elegance to websites, particularly those targeting
+                    upscale or artistic audiences.</li>
+                  <li><strong>Black:</strong> Black signifies power, sophistication, and elegance. It's commonly used in
+                    minimalist designs to create a sense of mystery or drama, but it should be used sparingly to avoid
+                    overwhelming visitors.</li>
+                  <li><strong>White:</strong> White represents purity, simplicity, and cleanliness. It's frequently used
+                    as a background color to create a sense of spaciousness and clarity, particularly in minimalist or
+                    modern designs.</li>
+                </ul>
+                <p>By strategically incorporating colors into web design, designers can create visually appealing and
+                  emotionally engaging websites that resonate with their target audience.</p>
+
+
+              </div>
+
+            </div>
+            <div id="modal-8" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Role of Typography in Web Design</h2>
+                <p>Typography plays a crucial role in web design, influencing the readability, aesthetics, and overall
+                  user experience of a website. Here's why typography matters and how it can impact your design:</p>
+
+                <p>1. Readability: The primary function of typography is to make content easy to read. Choosing the
+                  right font size, line spacing, and line length can greatly enhance readability and keep users engaged
+                  with your content.</p>
+
+                <p>2. Branding: Typography is an integral part of branding, helping to convey the personality and tone
+                  of a brand. By selecting fonts that align with your brand identity, you can reinforce brand
+                  recognition and build trust with your audience.</p>
+
+                <p>3. Visual Hierarchy: Typography allows designers to create visual hierarchy within a website, guiding
+                  users' attention and highlighting important content. By varying font sizes, weights, and styles, you
+                  can emphasize key messages and improve content comprehension.</p>
+
+                <p>4. User Experience: The typography choices you make can significantly impact the overall user
+                  experience of your website. Clear, legible fonts enhance usability and make it easier for users to
+                  navigate your site, while poor typography can lead to frustration and high bounce rates.</p>
+
+                <p>5. Accessibility: Typography plays a vital role in ensuring accessibility for all users, including
+                  those with visual impairments. Choosing fonts with good contrast, sufficient spacing, and appropriate
+                  styles can make your content more accessible to a wider audience.</p>
+
+                <p>6. Consistency: Consistent typography across your website creates a cohesive and unified look,
+                  enhancing brand recognition and creating a professional impression. Establishing a typographic style
+                  guide can help maintain consistency and streamline the design process.</p>
+
+                <p>7. Emotional Impact: Typography has the power to evoke emotions and convey meaning beyond the text
+                  itself. Different fonts elicit different emotional responses, allowing designers to evoke specific
+                  feelings and enhance the overall user experience.</p>
+
+                <p>8. Mobile Responsiveness: With the increasing use of mobile devices for browsing the web, typography
+                  must be optimized for smaller screens and touch interactions. Choosing responsive fonts and adjusting
+                  font sizes ensures a consistent reading experience across all devices.</p>
+
+                <p>By understanding the role of typography in web design and making informed typography choices,
+                  designers can create visually appealing, engaging, and user-friendly websites that effectively
+                  communicate their message and achieve their goals.</p>
+
+
+              </div>
+
+            </div>
+            <div id="modal-9" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Importance of User Experience (UX) Design</h2>
+                <p>User Experience (UX) design is a crucial aspect of creating successful digital products and services.
+                  It focuses on understanding the needs and behaviors of users to provide them with intuitive,
+                  efficient, and enjoyable experiences. Here's why UX design is essential:</p>
+
+                <p>1. Enhances Customer Satisfaction: By prioritizing user needs and preferences, UX design ensures that
+                  products and services are tailored to meet user expectations. This leads to higher customer
+                  satisfaction and loyalty.</p>
+
+                <p>2. Improves Usability: UX design involves optimizing the usability of digital interfaces, making them
+                  easy to navigate and interact with. This reduces friction in the user journey and increases task
+                  completion rates.</p>
+
+                <p>3. Boosts Conversion Rates: A well-designed user experience can significantly impact conversion rates
+                  by guiding users through the desired actions and reducing barriers to conversion. This can lead to
+                  increased sales, sign-ups, or other key metrics.</p>
+
+                <p>4. Builds Brand Reputation: Positive user experiences contribute to a strong brand reputation. When
+                  users have enjoyable interactions with a product or service, they are more likely to recommend it to
+                  others and become loyal brand advocates.</p>
+
+                <p>5. Reduces Costs and Increases Efficiency: Investing in UX design upfront can save costs in the long
+                  run by minimizing the need for costly redesigns or fixes. Additionally, efficient and intuitive user
+                  interfaces can streamline processes and improve productivity.</p>
+
+                <p>6. Drives Competitive Advantage: In today's competitive market, providing a superior user experience
+                  can set businesses apart from their competitors. Companies that prioritize UX design are better
+                  positioned to attract and retain customers in crowded markets.</p>
+
+                <p>Overall, UX design plays a vital role in the success of digital products and services by ensuring
+                  they meet user needs, drive engagement, and deliver value. By incorporating UX principles into the
+                  design process, businesses can create experiences that delight users and drive business outcomes.</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="grid-item initial-filter category-3">
+          <div class="row g-4 blog-content">
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Marketing</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    How To Optimize Email Marketing Campaigns for Better Results?
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-10"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Marketing</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Power of Content Marketing in Driving Brand Awareness
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-11"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Marketing</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Impact of Social Media Marketing on Business Growth
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-12"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Marketing</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Effective Strategies for Influencer Marketing Campaigns
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-13"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-10" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>How To Optimize Email Marketing Campaigns for Better Results?</h2>
+                <p>Optimizing email marketing campaigns can significantly improve their effectiveness and drive better
+                  results. Here are 10 strategies to optimize your email marketing campaigns:</p>
+                <p>1. Segment Your Audience: Divide your email list into smaller segments based on demographics,
+                  behavior, or preferences to send targeted and personalized content.</p>
+                <p>2. Use Compelling Subject Lines: Craft attention-grabbing subject lines that entice recipients to
+                  open your emails and engage with your content.</p>
+                <p>3. Optimize Email Content: Create visually appealing and easy-to-read emails with clear and concise
+                  messaging. Use a balance of text and visuals to convey your message effectively.</p>
+                <p>4. Include Clear Call-to-Actions (CTAs): Guide recipients towards desired actions by including
+                  prominent and compelling CTAs in your emails.</p>
+                <p>5. Test Different Elements: Experiment with various elements of your emails, such as subject lines,
+                  content layout, and CTAs, through A/B testing to identify what resonates best with your audience.</p>
+                <p>6. Personalize Email Content: Tailor your email content to the interests and preferences of each
+                  segment of your audience to enhance engagement and relevance.</p>
+                <p>7. Optimize for Mobile Devices: Ensure your emails are mobile-responsive to provide a seamless
+                  experience for recipients accessing them on smartphones and tablets.</p>
+                <p>8. Monitor and Analyze Performance: Regularly monitor key metrics such as open rates, click-through
+                  rates, and conversion rates to track the performance of your email campaigns and make data-driven
+                  optimizations.</p>
+                <p>9. Maintain Consistency: Establish a consistent sending schedule to keep your brand top-of-mind with
+                  your audience without overwhelming them with too many emails.</p>
+                <p>10. Continuously Improve: Stay updated on industry trends and best practices, and continuously refine
+                  and optimize your email marketing strategies to adapt to changing preferences and behaviors.</p>
+              </div>
+            </div>
+
+            <div id="modal-11" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Power of Content Marketing in Driving Brand Awareness</h2>
+                <p>Content marketing is a powerful strategy for building brand awareness and establishing credibility in
+                  the digital landscape. Here are 10 ways content marketing can drive brand awareness:</p>
+                <p>1. Define Your Brand Voice: Develop a consistent brand voice and tone across all content to create a
+                  cohesive brand identity.</p>
+                <p>2. Create Valuable Content: Produce high-quality, informative, and engaging content that provides
+                  value to your target audience.</p>
+                <p>3. Utilize Multiple Content Formats: Experiment with various content formats such as blog posts,
+                  videos, infographics, and podcasts to appeal to different audience preferences.</p>
+                <p>4. Leverage SEO Strategies: Optimize your content for search engines to improve visibility and
+                  attract organic traffic to your website.</p>
+                <p>5. Share Content on Social Media: Amplify your content reach by sharing it across social media
+                  platforms and engaging with your audience.</p>
+                <p>6. Collaborate with Influencers: Partner with influencers in your industry to expand your content's
+                  reach and credibility.</p>
+                <p>7. Guest Posting: Contribute guest posts to reputable websites and publications in your niche to
+                  reach new audiences and establish authority.</p>
+                <p>8. Encourage User-Generated Content: Encourage your audience to create and share content related to
+                  your brand, fostering a sense of community and authenticity.</p>
+                <p>9. Monitor Analytics: Track key metrics such as website traffic, engagement rates, and social media
+                  shares to measure the effectiveness of your content marketing efforts.</p>
+                <p>10. Adapt and Evolve: Stay agile and adapt your content strategy based on audience feedback, industry
+                  trends, and changing consumer behaviors to remain relevant and competitive.</p>
+              </div>
+            </div>
+
+            <div id="modal-12" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Impact of Social Media Marketing on Business Growth</h2>
+                <p>Social media marketing has revolutionized the way businesses connect with their audience and drive
+                  growth. Here are 10 ways social media marketing can impact business growth:</p>
+                <p>1. Increased Brand Visibility: Social media platforms provide businesses with an opportunity to reach
+                  a vast audience and increase brand visibility.</p>
+                <p>2. Targeted Advertising: Social media advertising allows businesses to target specific demographics,
+                  interests, and behaviors, resulting in more effective and efficient advertising campaigns.</p>
+                <p>3. Enhanced Customer Engagement: Social media facilitates direct communication between businesses and
+                  customers, fostering engagement and building relationships.</p>
+                <p>4. Driving Website Traffic: Sharing valuable content and promotions on social media can drive traffic
+                  to your website, increasing the likelihood of conversions.</p>
+                <p>5. Generating Leads: Social media platforms offer lead generation tools and advertising options that
+                  enable businesses to capture leads and nurture them through the sales funnel.</p>
+                <p>6. Building Brand Loyalty: Regular engagement and interaction with customers on social media can
+                  strengthen brand loyalty and encourage repeat purchases.</p>
+                <p>7. Customer Insights: Social media analytics provide valuable insights into customer behavior,
+                  preferences, and sentiment, informing business decisions and strategy.</p>
+                <p>8. Competitive Advantage: Businesses that effectively leverage social media can gain a competitive
+                  advantage by staying top-of-mind with their audience and capitalizing on emerging trends.</p>
+                <p>9. Influencer Partnerships: Collaborating with influencers and brand advocates on social media can
+                  amplify your reach and credibility, driving business growth.</p>
+                <p>10. Measurable Results: Social media marketing efforts can be tracked and measured in real-time,
+                  allowing businesses to evaluate ROI and optimize their strategies for better results.</p>
+              </div>
+            </div>
+
+            <div id="modal-13" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Effective Strategies for Influencer Marketing Campaigns</h2>
+                <p>Influencer marketing has emerged as a powerful strategy for brands to connect with their target
+                  audience and drive engagement. Here are 10 effective strategies for influencer marketing campaigns:
+                </p>
+                <p>1. Identify Relevant Influencers: Research and identify influencers whose audience aligns with your
+                  target demographic and brand values.</p>
+                <p>2. Set Clear Campaign Goals: Define clear objectives for your influencer marketing campaign, whether
+                  it's increasing brand awareness, driving sales, or generating leads.</p>
+                <p>3. Establish Authentic Relationships: Build genuine relationships with influencers based on trust,
+                  mutual respect, and shared values.</p>
+                <p>4. Collaborate on Creative Content: Work closely with influencers to co-create engaging and authentic
+                  content that resonates with their audience and aligns with your brand message.</p>
+                <p>5. Provide Creative Freedom: Allow influencers creative freedom to showcase your product or service
+                  in a way that feels authentic to their personal brand and style.</p>
+                <p>6. Offer Value to Influencers: Provide influencers with incentives such as exclusive access,
+                  discounts, or product samples to incentivize collaboration and strengthen the partnership.</p>
+                <p>7. Measure Success Metrics: Track key performance indicators (KPIs) such as reach, engagement, and
+                  conversions to measure the effectiveness of your influencer marketing campaigns.</p>
+                <p>8. Disclose Partnerships Transparently: Ensure influencers disclose their partnerships with your
+                  brand transparently to maintain trust and compliance with advertising regulations.</p>
+                <p>9. Nurture Long-Term Relationships: Cultivate long-term partnerships with influencers to build brand
+                  advocacy and leverage their influence over time.</p>
+                <p>10. Continuously Evaluate and Optimize: Regularly evaluate the performance of your influencer
+                  marketing campaigns and make data-driven optimizations to maximize ROI and achieve your campaign
+                  goals.</p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="grid-item initial-filter category-4">
+          <div class="row g-4 blog-content">
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Branding</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Building a Strong Brand Identity: Essential Strategies
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-14"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Branding</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Art of Storytelling: Crafting Your Brand Narrative
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-15"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Branding</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Role of Color Psychology in Branding
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-16"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Branding</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Creating Brand Consistency Across Different Platforms
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-17"> <img class="img-fluid"
+                      src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-14" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Building a Strong Brand Identity: Essential Strategies</h2>
+                <p>1. Define Your Brand Values: Identify what your brand stands for and what principles it adheres to.
+                </p>
+                <p>2. Understand Your Target Audience: Research your audience demographics, preferences, and behaviors
+                  to tailor your brand identity effectively.</p>
+                <p>3. Create a Distinctive Brand Voice: Develop a unique tone and style of communication that resonates
+                  with your audience.</p>
+                <p>4. Design a Memorable Logo: Craft a visually appealing and memorable logo that represents your
+                  brand's identity.</p>
+                <p>5. Develop Consistent Branding Elements: Establish consistent visual elements such as color schemes,
+                  typography, and imagery to reinforce brand recognition.</p>
+                <p>6. Tell Your Brand Story: Share the story behind your brand, its origins, values, and mission to
+                  create an emotional connection with your audience.</p>
+                <p>7. Deliver Consistent Brand Experience: Ensure that every interaction with your brand reflects its
+                  values and identity consistently.</p>
+                <p>8. Engage with Your Audience: Foster engagement through social media, email marketing, and other
+                  channels to build a community around your brand.</p>
+                <p>9. Monitor and Adapt: Continuously monitor market trends and consumer feedback to adapt your brand
+                  identity accordingly.</p>
+                <p>10. Stay Authentic: Authenticity is key to building trust and loyalty with your audience, so remain
+                  true to your brand values and promises.</p>
+              </div>
+            </div>
+            <div id="modal-15" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2> The Art of Storytelling: Crafting Your Brand Narrative</h2>
+                <p>1. Know Your Audience: Understand the demographics, interests, and pain points of your target
+                  audience to tailor your brand narrative effectively.</p>
+                <p>2. Identify Your Brand's Story: Determine the unique story behind your brand, including its origins,
+                  mission, challenges, and triumphs.</p>
+                <p>3. Create Compelling Characters: Develop relatable characters within your brand narrative to engage
+                  your audience emotionally.</p>
+                <p>4. Use Emotion to Connect: Tap into emotions such as joy, empathy, or nostalgia to create a deeper
+                  connection with your audience.</p>
+                <p>5. Focus on Authenticity: Authentic storytelling builds trust and credibility, so ensure your
+                  narrative reflects the genuine values and experiences of your brand.</p>
+                <p>6. Utilize Multiple Channels: Tell your brand story through various channels, including social media,
+                  blogs, videos, and customer testimonials.</p>
+                <p>7. Maintain Consistency: Ensure consistency in tone, style, and messaging across all storytelling
+                  platforms to reinforce brand identity.</p>
+                <p>8. Invite Audience Participation: Encourage audience engagement by inviting them to share their own
+                  stories or experiences related to your brand.</p>
+                <p>9. Adapt and Evolve: Stay flexible and adapt your brand narrative to resonate with changing audience
+                  preferences and market trends.</p>
+                <p>10. Measure Success: Track key performance metrics to gauge the effectiveness of your brand
+                  storytelling efforts and make necessary adjustments.</p>
+              </div>
+            </div>
+            <div id="modal-16" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Role of Color Psychology in Branding</h2>
+                <p>1. Understand Color Associations: Different colors evoke specific emotions and associations, so
+                  choose colors that align with your brand personality and message.</p>
+                <p>2. Establish Brand Identity: Use colors consistently across all brand elements, including logos,
+                  websites, and marketing materials, to reinforce brand recognition.</p>
+                <p>3. Create Visual Hierarchy: Use color contrast and saturation to guide the viewer's attention and
+                  highlight important information or calls to action.</p>
+                <p>4. Appeal to Target Audience: Consider your target audience's preferences and cultural background
+                  when selecting colors to ensure maximum impact.</p>
+                <p>5. Build Brand Associations: Associating your brand with specific colors can help create positive
+                  brand associations and strengthen brand recall.</p>
+                <p>6. Test and Iterate: Conduct A/B testing to evaluate the effectiveness of different color schemes and
+                  refine your branding strategy accordingly.</p>
+                <p>7. Stay Consistent Across Platforms: Maintain consistent color usage across digital and print media
+                  to ensure a cohesive brand experience.</p>
+                <p>8. Consider Accessibility: Ensure that your color choices meet accessibility standards and are easily
+                  distinguishable for users with visual impairments.</p>
+                <p>9. Use Color Psychology in Marketing Campaigns: Leverage color psychology in marketing campaigns to
+                  evoke desired emotions and influence consumer behavior.</p>
+                <p>10. Monitor Market Trends: Stay updated on color trends and competitor branding strategies to remain
+                  relevant and innovative in your color choices.</p>
+              </div>
+            </div>
+            <div id="modal-17" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Creating Brand Consistency Across Different Platforms</h2>
+                <p>1. Establish Brand Guidelines: Develop comprehensive brand guidelines that outline your brand's
+                  visual identity, voice, tone, and messaging standards.</p>
+                <p>2. Train Your Team: Educate your team members on the importance of brand consistency and provide them
+                  with the tools and resources to maintain it.</p>
+                <p>3. Use Templates and Style Guides: Create templates and style guides for marketing materials,
+                  presentations, and other brand assets to ensure consistency in design and messaging.</p>
+                <p>4. Centralize Brand Assets: Store brand assets such as logos, fonts, and graphics in a centralized
+                  location accessible to all team members to avoid inconsistencies.</p>
+                <p>5. Monitor Brand Mentions: Regularly monitor social media channels, review sites, and other online
+                  platforms for brand mentions and ensure that they</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="grid-item initial-filter category-5">
+          <div class="row g-4 blog-content">
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Content Creation</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Secrets to Compelling Content Creation
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-18">
+                    <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Content Creation</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Mastering Content Creation Techniques
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-19">
+                    <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Content Creation</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Art of Strategic Content Creation
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-20">
+                    <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">Content Creation</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Crafting Compelling Content: A Guide for Marketers
+                  </p>
+                  <a href="#" class="open-modal" data-modal="#modal-21">
+                    <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-18" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Secrets to Compelling Content Creation</h2>
+                <p>1. Understand Your Audience: Conduct thorough research to understand the demographics, interests, and
+                  preferences of your target audience.</p>
+                <p>2. Tell a Story: Use storytelling techniques to engage your audience emotionally and create a
+                  memorable experience.</p>
+                <p>3. Focus on Quality: Prioritize quality over quantity by creating content that is valuable,
+                  informative, and well-written.</p>
+                <p>4. Use Visuals Effectively: Incorporate high-quality images, videos, and infographics to enhance the
+                  visual appeal of your content.</p>
+                <p>5. Optimize for SEO: Implement SEO best practices to ensure your content ranks well in search engine
+                  results and attracts organic traffic.</p>
+                <p>6. Stay Consistent: Maintain a consistent publishing schedule to keep your audience engaged and build
+                  trust with your brand.</p>
+                <p>7. Encourage Interaction: Prompt your audience to interact with your content by asking questions,
+                  conducting polls, or hosting contests.</p>
+                <p>8. Monitor Performance: Track the performance of your content using analytics tools and adjust your
+                  strategy based on the insights gathered.</p>
+                <p>9. Collaborate with Influencers: Partner with influencers or industry experts to amplify your content
+                  reach and credibility.</p>
+                <p>10. Continuously Improve: Regularly review and refine your content strategy based on feedback and
+                  changing market trends to stay relevant and effective.</p>
+              </div>
+            </div>
+
+
+            <div id="modal-19" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Mastering Content Creation Techniques</h2>
+                <p>1. Research and Planning: Start by conducting thorough research on your topic and create a detailed
+                  content plan outlining key points and structure.</p>
+                <p>2. Captivating Headlines: Craft attention-grabbing headlines that pique curiosity and compel readers
+                  to click and read your content.</p>
+                <p>3. Compelling Introduction: Hook your audience from the start with a compelling introduction that
+                  addresses their pain points or interests.</p>
+                <p>4. Engaging Visuals: Use relevant and eye-catching visuals such as images, videos, and infographics
+                  to complement your written content and increase engagement.</p>
+                <p>5. Clear Structure: Organize your content into logical sections with clear headings and subheadings
+                  to improve readability and navigation.</p>
+                <p>6. Persuasive Writing: Use persuasive language and storytelling techniques to influence your
+                  audience's emotions and persuade them to take action.</p>
+                <p>7. Incorporate Data and Statistics: Support your arguments and claims with credible data, statistics,
+                  and case studies to build credibility and trust.</p>
+                <p>8. Call to Action (CTA): Include a clear and compelling call to action at the end of your content to
+                  encourage readers to take the desired next step.</p>
+                <p>9. Edit and Proofread: Carefully edit and proofread your content to ensure accuracy, clarity, and
+                  consistency before publishing.</p>
+                <p>10. Analyze and Iterate: Monitor the performance of your content, analyze audience feedback, and
+                  iterate on your content strategy to continuously improve results.</p>
+              </div>
+            </div>
+
+
+            <div id="modal-20" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>The Art of Strategic Content Creation</h2>
+                <p>1. Set Clear Goals: Define specific goals and objectives for your content creation efforts to align
+                  with your overall business strategy.</p>
+                <p>2. Audience Segmentation: Segment your target audience based on demographics, interests, and
+                  behaviors to tailor your content to their needs and preferences.</p>
+                <p>3. Content Calendar: Create a content calendar outlining topics, publishing dates, and distribution
+                  channels to ensure consistency and organization.</p>
+                <p>4. Keyword Research: Conduct keyword research to identify relevant topics and optimize your content
+                  for search engines and user intent.</p>
+                <p>5. Content Distribution Strategy: Develop a strategic plan for distributing your content across
+                  various channels such as social media, email, and industry forums.</p>
+                <p>6. Amplification Tactics: Utilize amplification tactics such as influencer partnerships, paid
+                  promotion, and content syndication to expand your content reach.</p>
+                <p>7. Conversion Optimization: Optimize your content for conversions by incorporating clear CTAs, lead
+                  magnets, and persuasive copywriting.</p>
+                <p>8. Performance Tracking: Monitor the performance of your content using analytics tools to measure key
+                  metrics such as traffic, engagement, and conversion rates.</p>
+                <p>9. Audience Feedback: Gather feedback from your audience through surveys, comments, and social media
+                  interactions to understand their preferences and improve your content strategy.</p>
+                <p>10. Continuous Improvement: Continuously analyze data, test new strategies, and refine your content
+                  approach to adapt to changing market trends and audience preferences.</p>
+              </div>
+            </div>
+
+
+            <div id="modal-21" class="modal">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Crafting Compelling Content: A Guide for Marketers</h2>
+                <p>1. Understand Your Audience: Research your target audience to understand their needs, pain points,
+                  and preferences.</p>
+                <p>2. Define Your Goals: Determine the objectives of your content marketing strategy, whether it's brand
+                  awareness, lead generation, or customer retention.</p>
+                <p>3. Develop a Content Strategy: Create a comprehensive content strategy that outlines topics, formats,
+                  channels, and timelines.</p>
+                <p>4. Create High-Quality Content: Focus on creating valuable, informative, and engaging content that
+                  resonates with your target audience.</p>
+                <p>5. Optimize for SEO: Incorporate relevant keywords, meta tags, and optimized headings to improve your
+                  content's visibility in search engine results.</p>
+                <p>6. Distribute Across Channels: Utilize various distribution channels such as social media, email
+                  newsletters, and guest blogging to reach a wider audience.</p>
+                <p>7. Engage with Your Audience: Foster engagement by responding to comments, asking questions, and
+                  encouraging user-generated content.</p>
+                <p>8. Measure Performance: Track key performance metrics such as website traffic, engagement rates, and
+                  conversion rates to evaluate the success of your content.</p>
+                <p>9. Iterate and Improve: Use data insights and feedback to refine your content strategy, experiment
+                  with new formats, and continuously optimize your approach.</p>
+                <p>10. Stay Updated: Keep abreast of industry trends, emerging technologies, and changes in consumer
+                  behavior to ensure your content remains relevant and effective.</p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="grid-item initial-filter category-6">
+          <div class="row g-4 blog-content">
+
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">SEO analysis</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    The Fundamentals of SEO Analysis
+                  </p>
+                  <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">SEO analysis</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Advanced Techniques for SEO Analysis
+                  </p>
+                  <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-1.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">SEO analysis</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    Optimizing Your Website with SEO Analysis
+                  </p>
+                  <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-lg-6">
+              <div class="blog-wrapper">
+                <div class="blog-img-parent">
+                  <img class="img-fluid" src="./assets/images/blog-img-2.png" alt="img">
+                </div>
+                <div class="blog-sub-parent">
+                  <span class="fs-18-c blog-sub">SEO analysis</span>
+                  <span class="fs-18-c blog-sub">2 min read</span>
+                </div>
+                <div class="blog-sub-2-parent">
+                  <p class="fs-32-c text-start">
+                    SEO Analysis Tools and Best Practices
+                  </p>
+                  <a href="#"> <img class="img-fluid" src="./assets/images/angel-icon.png" alt="icon"> </a>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div id="modal-22" class="modal">
+              <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>The Fundamentals of SEO Analysis</h2>
+                  <p>1. Understand the basics of search engine optimization (SEO) and its importance in digital marketing.</p>
+                  <p>2. Learn how to conduct keyword research to identify relevant search terms for your website.</p>
+                  <p>3. Explore on-page SEO factors such as meta tags, headings, and content optimization.</p>
+                  <p>4. Discover the role of off-page SEO techniques like link building and social media marketing.</p>
+                  <p>5. Familiarize yourself with tools like Google Analytics and Google Search Console for tracking SEO performance.</p>
+                  <p>6. Understand the importance of user experience (UX) and site speed in SEO analysis.</p>
+                  <p>7. Learn how to conduct a technical SEO audit to identify and fix website issues.</p>
+                  <p>8. Explore the concept of local SEO and its significance for businesses targeting specific geographic areas.</p>
+                  <p>9. Stay updated with algorithm changes and industry trends to adapt your SEO strategies accordingly.</p>
+                  <p>10. Implement ethical SEO practices and avoid black hat techniques that could harm your website's ranking.</p>
+              </div>
+          </div>
+          
+          <div id="modal-23" class="modal">
+              <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>Advanced Techniques for SEO Analysis</h2>
+                  <p>1. Dive deeper into keyword research methodologies to uncover hidden opportunities and niche markets.</p>
+                  <p>2. Explore advanced on-page optimization strategies such as schema markup and semantic SEO.</p>
+                  <p>3. Learn how to leverage data from competitor analysis to refine your own SEO strategy.</p>
+                  <p>4. Discover advanced link-building techniques including outreach campaigns and guest blogging.</p>
+                  <p>5. Explore the role of content marketing in driving organic traffic and improving search engine rankings.</p>
+                  <p>6. Master the art of technical SEO, including website architecture, XML sitemaps, and server optimization.</p>
+                  <p>7. Utilize advanced SEO tools and software to streamline your analysis process and gain deeper insights.</p>
+                  <p>8. Learn how to analyze and interpret SEO performance metrics to make data-driven decisions.</p>
+                  <p>9. Explore the impact of voice search and mobile optimization on SEO strategies.</p>
+                  <p>10. Stay ahead of algorithm updates and changes in search engine ranking factors through continuous learning and adaptation.</p>
+              </div>
+          </div>
+          
+          <div id="modal-24" class="modal">
+              <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>Optimizing Your Website with SEO Analysis</h2>
+                  <p>1. Conduct a comprehensive SEO audit to identify areas for improvement on your website.</p>
+                  <p>2. Optimize your website's structure and navigation to enhance user experience and search engine crawlability.</p>
+                  <p>3. Implement targeted keyword optimization strategies throughout your website's content and meta data.</p>
+                  <p>4. Create high-quality, relevant content that resonates with your target audience and addresses their search queries.</p>
+                  <p>5. Improve page load speed and mobile responsiveness to enhance user experience and SEO performance.</p>
+                  <p>6. Optimize images and multimedia content for search engines by using descriptive filenames and alt tags.</p>
+                  <p>7. Build a strong internal linking structure to help search engines discover and index your website's pages.</p>
+                  <p>8. Monitor and track your website's SEO performance using analytics tools and make adjustments as needed.</p>
+                  <p>9. Implement schema markup to provide search engines with additional context about your content.</p>
+                  <p>10. Stay informed about the latest SEO trends and updates to ensure your website remains competitive in search rankings.</p>
+              </div>
+          </div>
+          
+          <div id="modal-25" class="modal">
+              <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2>SEO Analysis Tools and Best Practices</h2>
+                  <p>1. Explore a variety of SEO analysis tools including keyword research tools, rank tracking software, and backlink checkers.</p>
+                  <p>2. Understand the features and capabilities of popular SEO tools such as SEMrush, Moz, and Ahrefs.</p>
+                  <p>3. Learn how to use Google's free tools like Google Analytics and Google Search Console to analyze website performance.</p>
+                  <p>4. Develop a comprehensive SEO toolkit that includes a mix of free and paid tools to address different aspects of SEO analysis.</p>
+                  <p>5. Follow best practices for using SEO tools, including accurate data interpretation and regular tool updates.</p>
+                  <p>6. Utilize SEO audit tools to identify technical issues, keyword opportunities, and content optimization opportunities.</p>
+                  <p>7. Leverage competitor analysis tools to benchmark your website against competitors and identify areas for improvement.</p>
+                  <p>8. Implement keyword research tools to discover new keyword opportunities and monitor keyword performance over time.</p>
+                  <p>9. Use backlink analysis tools to monitor your website's backlink profile and identify opportunities for link building.</p>
+                  <p>10. Stay informed about new SEO tools and technologies to stay ahead of the curve and maintain a competitive edge.</p>
+              </div>
+          </div>
+          
+          
+            
+
+          </div>
+
+        </div>
       </div>
+
+      <!-- pagination start -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- pagination end -->
+
+
     </div>
+  </div>
   </div>
   <!-- Categories Content End Here -->
   <!-- Email Section Start Here-->
@@ -1142,93 +1431,89 @@
     <div class="container">
       <div class="email__area">
         <h2 class="email-title">Let’s Start Working Together.<br class="d-none d-md-block">
-          <a href="mailto:naharweb15@gmail.com" target="_blank"><span class="get-in-touch">Get in Touch</span></a> with Us!
+          <a href="mailto:kenneth@sparkelberry.com" target="_blank"><span class="get-in-touch">Get in Touch</span></a> with Us!
         </h2>
       </div>
     </div>
   </div>
-  <!-- Footer Section Start Here-->
+    <!-- Footer Section Start Here-->
 
-  <div class="footer__section">
-    <div class="container">
-      <div class="footer__area">
-        <div class="footer-parent">
-
-
-          <div class="footer_logo">
-            <a href="./index.html"><img class="img-fluid" src="./assets/images/footer-logo.png" alt="img"></a>
-            <p class="fs-18-w footer-logo-text">Lorem ipsum dolor sit amet<br class="d-none d-lg-block">
-              consectetur adipiscing <br class="d-block d-lg-none"> elit aliquam</p>
-            <div class="social-media">
-              <a href="https://www.facebook.com/Opediatech/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/opedia_technologies/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://bd.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-
+    <div class="footer__section">
+      <div class="container">
+          <div class="footer__area">
+              <div class="footer-parent">
+  
+                  <div class="footer_logo">
+                      <a href="./index.html"><h1 class="hero-title2" style="color:white;">SPARKELBERRY</h1></a>
+                      <p class="fs-18-w footer-logo-text">At Sparkelberry, we are committed to delivering top-notch <br/> digital marketing solutions to help your business grow.</p>
+                      <div class="social-media">
+                          <a href="https://www.facebook.com/Opediatech/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/opedia_technologies/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://bd.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                      </div>
+                  </div>
+  
+                  <div class="footer-menu">
+                      <p class="company-title">Company</p>
+                      <a href="./index.html"><span class="fs-18-w">Home</span></a>
+                      <a href="./about.html"><span class="fs-18-w">About us</span></a>
+                      <a href="./service.html"><span class="fs-18-w">Services</span></a>
+                      <a href="./blog.html"><span class="fs-18-w">Blog</span></a>
+                      <a href="./contact.html"><span class="fs-18-w">Contact</span></a>
+                  </div>
+  
+                  <div class="footer-menu">
+                      <p class="company-title">Support</p>
+                      <a href="contact.html"><span class="fs-18-w">Getting started</span></a>
+                      <a href="contact.html"><span class="fs-18-w">Help center</span></a>
+                      <a href="contact.html"><span class="fs-18-w">Report a bug</span></a>
+                      <a href="contact.html"><span class="fs-18-w">Chat support</span></a>
+                  </div>
+  
+                  <div class="footer-menu">
+                      <p class="company-title">Contact Us</p>
+                      <div class="contact-child">
+                          <i class="fa-regular fa-envelope"></i>
+                          <a href="mailto:kenneth@sparkelberry.com" target="_blank"><span class="fs-18-w">kenneth@sparkelberry.com</span></a>
+                      </div>
+                      <!-- <div class="contact-child">
+                          <i class="fa-solid fa-phone"></i>
+                          <a href="tel:+14146875892" target="_blank"><span class="fs-18-w">(414) 687 - 5892</span></a>
+                      </div> -->
+                      <div class="contact-child">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <a href="https://www.google.com/maps/place/2317+NW+66th+Ct,+Gainesville,+FL+32653,+USA" target="_blank"><span class="fs-18-w">2317 N.W. 66TH CT.<br class="d-none d-lg-block">Gainesville, FL 32653</span></a>
+                      </div>
+                      <div class="contact-child">
+                          <i class="fa-solid fa-globe"></i>
+                          <a href="https://sparkelberry.com" target="_blank"><span class="fs-18-w">www.sparkelberry.com</span></a>
+                      </div>
+                  </div>
+  
+              </div>
           </div>
-
-
-          <div class="footer-menu">
-            <p class="company-title">Company</p>
-            <a href="./index.html"> <span class="fs-18-w">Home</span> </a>
-            <a href="./about.html"> <span class="fs-18-w">About us</span> </a>
-            <a href="./service.html"><span class="fs-18-w">Services </span> </a>
-            <a href="./blog.html"> <span class="fs-18-w">Blog</span> </a>
-            <a href="./contact.html"> <span class="fs-18-w">Contact</span> </a>
-          </div>
-
-
-
-          <div class="footer-menu">
-            <p class="company-title">Support</p>
-            <a href="#"><span class="fs-18-w">Getting started</span></a>
-            <a href="#"><span class="fs-18-w">Help center</span></a>
-            <a href="#"><span class="fs-18-w">Server status</span></a>
-            <a href="#"><span class="fs-18-w">Report a bug</span></a>
-            <a href="#"><span class="fs-18-w">Chat support</span></a>
-          </div>
-          <div class="footer-menu">
-            <p class="company-title">Contacts us</p>
-            <div class="contact-child">
-              <i class="fa-regular fa-envelope"></i>
-              <a href="mailto:naharweb15@gmail.com" target="_blank"><span class="fs-18-w">contact@company.com</span></a>
-            </div>
-            <div class="contact-child">
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:+8801978159172" target="_blank"><span class="fs-18-w">(414) 687 - 5892</span></a>
-            </div>
-            <div class="contact-child">
-              <i class="fa-solid fa-location-dot"></i>
-              <a href="https://www.google.com/maps"><span class="fs-18-w">794 Mcallister St <br class="d-none d-lg-block">
-                San Francisco, 94102</span></a>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </div>
   </div>
 
-  <!-- Privacy Section Start Here-->
-  <div class="privacy__section">
-    <div class="container">
-      <div class="privacy__area">
-
-        <div class="copyright-title">
-          <p>Copyright © 2023 OneGrowth</p>
+    <!-- Privacy Section Start Here-->
+    <div class="privacy__section">
+      <div class="container">
+        <div class="privacy__area">
+  
+          <div class="copyright-title">
+            <p>Copyright © 2024 SparkelBerry</p>
+          </div>
+          <div class="privacy-title">
+            <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+          </div>
+  
+  
         </div>
-        <div class="privacy-title">
-          <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
-        </div>
-
-
+  
       </div>
-
     </div>
-  </div>
 
 
   <button id="scrollToTopBtn" title="Go to top">&#9650;</button>
@@ -1254,25 +1539,46 @@
     AOS.init();
   </script>
 
-<script>
-  var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-  filter: '.initial-filter', // Add this line with the appropriate class
-});
-  $('.btn-parent button').on("click", function () {
-  var value = $(this).attr('data-name');
-  console.log('Clicked button with value:', value);
+  <script>
+    var $grid = $('.grid').isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'fitRows',
+      filter: '.initial-filter', // Add this line with the appropriate class
+    });
+    $('.btn-parent button').on("click", function () {
+      var value = $(this).attr('data-name');
+      console.log('Clicked button with value:', value);
 
-  $grid.isotope({
-    filter: value,
-  });
+      $grid.isotope({
+        filter: value,
+      });
 
-  $('.btn-parent button').removeClass('active');
-  $(this).addClass('active');
-});
-  
-</script>
+      $('.btn-parent button').removeClass('active');
+      $(this).addClass('active');
+    });
+
+  </script>
+  <script>
+    document.querySelectorAll('.open-modal').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        document.querySelector(button.dataset.modal).style.display = 'block';
+      });
+    });
+
+    document.querySelectorAll('.close-button').forEach(button => {
+      button.addEventListener('click', () => {
+        button.closest('.modal').style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', event => {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+      }
+    });
+  </script>
+
 </body>
 
 </html>
