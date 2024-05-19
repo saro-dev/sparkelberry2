@@ -1,0 +1,224 @@
+/* ======service integrate Section start Here =====*/
+.service-integrate-section {
+    padding: 140px 0;
+    background: var(--BG-Color-01, radial-gradient(136.17% 136.17% at 50% 100%, #E9D9FF 15.25%, rgba(255, 255, 255, 0.00) 100%));
+}
+
+.integrate-sub, .choose-sub {
+    color: #260058;
+    border-radius: 100px;
+    font-weight: 500;
+    background: var(--Color-06, #F0E3FF);
+    padding: 10px 22px;
+}
+.integrate-title{
+    padding: 24px 0;
+}
+.integrate-img{
+    max-width: 846px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 51px;
+}
+.integrate-img img{
+    border-radius: 51px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.integrate-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.integrate-text {
+    color: #2E2E2E;
+    padding-bottom: 24px;
+}
+
+
+/* ======service integrate Section end Here  =====*/
+
+/* Service section start */
+.service-section {
+    background-color: #260058;
+    padding: 100px 0 140px 0;
+}
+
+.service-area {
+    display: flex;
+    align-items: center;
+    padding-bottom: 67px;
+}
+/* newwwww */
+.service-section .new_card {
+    padding: 124px 54px 32px 54px;
+    text-align: center;
+    border:1px solid transparent;
+    background-image: url(../images/border.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Primary-Color, #260058);
+    border-radius: 28px;
+    background-position: bottom;
+}
+
+.service-section .new_card:hover {
+    background-image: none;
+    background: var(--Color-02, #3E1378);
+    border: 1px solid var(--Linear-02, #3E1378);
+    box-shadow: 0px 126px 76px 0px rgba(0, 0, 0, 0.05), 0px 224px 90px 0px rgba(0, 0, 0, 0.01), 0px 351px 98px 0px rgba(0, 0, 0, 0.00);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+/* newwwww */
+
+.new-card-img-top {
+    max-width: 60px;
+    max-height: 60px;
+    margin: auto;
+}
+
+.new_card i {
+    font-size: 22px;
+    color: #AE72FF;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-title {
+    color: var(--Neutral-Color, #FFF);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    /* 42px */
+    padding-bottom: 18px;
+    padding-top: 24px;
+}
+
+.card-text {
+    color: #D0D0D0;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    padding-bottom: 42px;
+}
+
+/* serve section end */
+/* choose section start */
+.choose-section {
+    padding: 140px 0;
+}
+.choose-img{
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 51px;
+}
+.choose-img img{
+    border-radius: 51px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.choose-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.choose-child{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 24px;
+}
+.choose-sub{
+    background: var(--Color-04, #F9F4FF);
+}
+/* choose section end */
+/* price section start */
+.price-card{
+    border-radius: 28px;
+    border: 1px solid var(--Line-Color-01, #EEE);
+    background: var(--Color-04, #F9F4FF);
+    padding: 32px;
+    margin-top: 32px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.price-card:hover{
+    background: var(--Primary-Color, #260058);
+    box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.12);
+}
+.price-card:hover .price-sub, .price-card:hover .fs-16-s, .price-card:hover  .amount, .price-card:hover  .month, .price-card:hover .fs-18-k{
+    color: #fff;
+}
+
+.tick-default{
+    display: block;
+}
+.tick-hover{
+    display: none;
+}
+.price-card:hover .tick-default{
+    display: none;
+}
+
+.price-card:hover .tick-hover{
+    display: block!important;
+}
+
+.price-area{
+    text-align: center;
+}
+.list-parent{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 32px;
+}
+.price-list{
+    max-width: 206px;
+    margin:auto;
+}
+.price-sub{
+    color: var(--Primary-Color, #260058);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%; /* 42px */
+    padding: 33px 0 24px 0;
+}
+.price-sub:hover{
+    color: #FFF;
+}
+.price-parent{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   justify-content: center;
+   padding: 41px 0 39px 0;
+}
+.amount{
+    color: var(--Primary-Color, #260058);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 150%; /* 81px */
+}
+.month{
+    color: var(--Text-Color-01, #2E2E2E);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+/* price section end */
+
+
+
+
+

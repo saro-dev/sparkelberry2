@@ -1,0 +1,210 @@
+.about-page-section {
+    padding: 93px 0 48px 0;
+    background: var(--BG-Color-01, radial-gradient(136.17% 136.17% at 50% 100%, #E9D9FF 15.25%, rgba(255, 255, 255, 0.00) 100%));
+    overflow-x: hidden;
+}
+.about-page-area{
+    text-align: center;
+}
+.about-sub, .seo-sub {
+    color: #260058;
+    border-radius: 100px;
+    font-weight: 500;
+    background: #F0E3FF;
+    padding: 10px 30px;
+}
+.about-text {
+    color: var(--Text-Color-02, #2E2E2E);
+    padding: 24px 0 48px 0;
+}
+
+
+/* Trust section start */
+.trust-section{
+    background: #260058;
+    padding: 100px 0 50px 0;
+}
+.trust-area{
+    margin-bottom: 57px;
+}
+.trust-img img{
+    border-radius: 40px;
+
+}
+/* Trust section end */
+/* seo section start */
+.seo-section{
+    padding: 147px 0;
+}
+.seo-img{
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 51px;
+
+}
+.seo-img img{
+    border-radius: 51px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+.seo-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.seo-sub{
+    background: #F9F4FF!important;
+
+}
+.seo-title{
+    font-size: 49px;
+    margin-top: 24px;
+}
+.seo-text{
+    padding: 24px 0 32px 0;
+}
+.seo-card{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 25px;
+    border-radius: 21px;
+    border: 1px solid var(--Line-Color-01, #EEE);
+    background: var(--Neutral-Color, #FFF);
+
+}
+.seo-card:hover{
+    border: 1px solid #fff;
+    box-shadow: 10px 10px 24px 0px rgba(38, 0, 88, 0.05);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+/* seo section end */
+
+/* Service section start */
+
+.service-section {
+    padding:140px 0;
+}
+.top-content{
+    text-align: center;
+}
+
+/* newwwww */
+.service-section .new_card {
+    padding: 56px 101px 78px;
+    text-align: center;
+    border-radius: 28px;
+    border: 1px solid var(--Line-Color-01, #EEE);
+    background: var(--Neutral-Color, #FFF);
+}
+
+.service-section .new_card:hover {
+    border: 1px solid #fff;
+    background: var(--Color-04, #F9F4FF);
+    box-shadow: 0px 199px 80px 0px rgba(0, 0, 0, 0.01), 0px 311px 87px 0px rgba(0, 0, 0, 0.00);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.first {
+    display: block;
+}
+
+.second {
+    display: none;
+}
+.new_card:hover .first {
+    display: none;
+    transition: 0.3s ease-in-out;
+
+}
+
+.new_card:hover .second {
+    display: block;
+    transition: 0.3s ease-in-out;
+
+}
+
+/* newwwww */
+
+.new-card-img-top {
+    max-width: 60px;
+    max-height: 60px;
+    margin: auto;
+}
+
+
+.card-title {
+    color: var(--Primary-Color, #260058);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%; /* 42px */
+    padding: 24px 0 12px;
+}
+
+/* serve section end */
+/* team section start */
+.team-area, .team-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-area{
+    justify-content: space-evenly;
+}
+.team-text{
+    padding: 24px 0 48px 0;
+}
+.team-area-one{
+    margin-bottom: 83px;
+}
+
+.team-child{
+    text-align: center;
+}
+.fs-32-c{
+    padding: 24px 0 2px;
+}
+.purple-btn-parent{
+    text-align: center;
+    margin-top: 48px;
+}
+/* team section end */
+
+/* ======counting section start =====*/
+.counting-section {
+    background: var(--Color-04, #F9F4FF);
+    padding: 62px 0;
+}
+
+.counting-parent {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.count-head {
+    color: var(--Primary-Color, #260058);
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 150%;
+    /* 97.5px */
+}
+
+.count-text {
+    color: var(--Secondary-Color, #5C0DC6);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 36px */
+}
+
+/* ======counting section end =====*/
+
+
+
+
